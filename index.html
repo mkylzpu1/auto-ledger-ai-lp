@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家計簿アシスタント｜スマホでカンタン、PCでこだわる。</title>
+<meta name="description" content="レジ待ちの30秒で入力を終わらせて、あとはPCから好きなだけ整理・分析。ひとり分の家計簿に、ふたつの使い方を。">
+
+<!-- ▼ ここをご自身の公開URLに置き換えてください（例: https://your-name.github.io/your-repo/） -->
+<link rel="canonical" href="https://example.github.io/kakeibo-assistant/">
+
+<!-- Favicons -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#A9D1EF">
+
+<!-- Open Graph (Facebook / LINE ほか) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="家計簿アシスタント">
+<meta property="og:title" content="家計簿アシスタント｜スマホでパッと記録、PCでじっくり整える。">
+<meta property="og:description" content="レジ待ちの30秒で入力を終わらせて、あとはPCから好きなだけ整理・分析。ひとり分の家計簿に、ふたつの使い方を。">
+<meta property="og:url" content="https://example.github.io/kakeibo-assistant/">
+<meta property="og:image" content="https://example.github.io/kakeibo-assistant/assets/ogp-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="家計簿アシスタント｜スマホでパッと記録、PCでじっくり整える。">
+<meta name="twitter:description" content="レジ待ちの30秒で入力を終わらせて、あとはPCから好きなだけ整理・分析。">
+<meta name="twitter:image" content="https://example.github.io/kakeibo-assistant/assets/ogp-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="ledger-bg">
+<div class="binding" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<div class="wrap">
+
+  <header>
+    <div class="nav-row">
+      <div class="logo"><img src="assets/icon-192.png" alt="" class="logo-mark-img" width="50" height="50">家計簿アシスタント</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">KAKEIBO</span>
+      <h1>スマホでパッと記録して完結、<br>PCからも<span class="accent">じっくり整えられる</span>。</h1>
+      <p class="lead">会計が終わったその場で30秒、レシートを見ながらサッと入力。あとはPCから好きなだけ整理・分析。家族での家計簿はもちろん、友人との旅行の清算にも使えます。</p>
+
+      <div class="hero-badges">
+        <div class="stamp"><b>10秒</b><span>スマホで記録完了</span></div>
+        <div class="stamp"><b>自動同期</b><span>スプレッドシートに反映</span></div>
+        <div class="stamp"><b>自由編集</b><span>スプレッドシートで調整</span></div>
+      </div>
+
+      <div class="hero-cta">
+        <a class="btn-line" href="https://line.me/R/ti/p/%40102shcab" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.69 2 10.23c0 4.07 3.58 7.48 8.4 8.13.33.07.78.22.89.5.1.26.07.66.03.92l-.14.87c-.04.26-.2 1.01.89.55 1.08-.46 5.86-3.45 8-5.9C21.36 13.9 22 12.14 22 10.23 22 5.69 17.52 2 12 2z"/></svg>
+          さっそく始める
+        </a>
+        <a class="btn-ghost" href="#howto">使い方を見る ↓</a>
+      </div>
+    </div>
+
+    <div class="phone-shell">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <video src="userGuide-kakeibo-assistant.mp4" autoplay muted loop playsinline controls></video>
+      </div>
+      <p class="phone-caption">実際の操作画面（音声なし・ループ再生）</p>
+    </div>
+  </section>
+
+  <section class="steps-section" id="howto">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">30秒でわかる操作手順</span>
+        <h2>やることは、たったこれだけ。</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>初期設定（1分程度）</h3>
+          <p>LINEで友だち登録し、グループに追加。あとはLINEの案内通知に従って進めるだけで準備完了です。</p>
+          <a class="btn-line-sm" href="https://line.me/R/ti/p/%40102shcab" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.69 2 10.23c0 4.07 3.58 7.48 8.4 8.13.33.07.78.22.89.5.1.26.07.66.03.92l-.14.87c-.04.26-.2 1.01.89.55 1.08-.46 5.86-3.45 8-5.9C21.36 13.9 22 12.14 22 10.23 22 5.69 17.52 2 12 2z"/></svg>
+            友達登録
+          </a>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>開いて、入力</h3>
+          <p>LINEトークを開いて金額を入力、またはレシートを送信するだけ。外出先でも数秒で終わります。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>自動で分類・保存</h3>
+          <p>入力した内容は自動でカテゴリ分けされ、そのままスプレッドシートに保存されます。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>PCで見直す</h3>
+          <p>週末や月末はPCを開いて、同期されたスプレッドシートをじっくり見直し・編集。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="device-section">
+    <div class="section-head">
+      <span class="eyebrow">MOBILE + PC</span>
+      <h2>ライフスタイルに合わせて、<br>使い方はあなた次第。</h2>
+    </div>
+
+    <div class="device-grid">
+      <div class="device-card mobile">
+        <span class="tag">MOBILE</span>
+        <h3>スキマ時間に、スマホで完結</h3>
+        <p>面倒な登録作業はゼロ。思い立ったその場で記録が終わります。</p>
+        <ul>
+          <li>金額だけを入力</li>
+          <li>レシート撮影で自動読み取り</li>
+          <li>スマホからスプレッドシートを確認</li>
+        </ul>
+      </div>
+
+      <div class="sync-col">
+        <div class="sync-line"></div>
+        <span class="sync-label">自動で同期</span>
+        <div class="sync-line"></div>
+      </div>
+
+      <div class="device-card pc">
+        <span class="tag">PC</span>
+        <h3>PCから、自分好みにカスタマイズ</h3>
+        <p>スプレッドシートを直接編集して、もっと自分に合った家計管理へ。</p>
+        <ul>
+          <li>スプレッドシートを直接修正・並び替え</li>
+          <li>カテゴリや予算枠を自由に追加</li>
+          <li>グラフや集計で月ごとの傾向を分析</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="cta">
+    <span class="eyebrow">START FOR FREE</span>
+    <h2>今日のレシートから、<br>はじめてみませんか。</h2>
+    <p>登録は1分、クレジットカードは不要です。記録の手軽さを試してください。</p>
+    <div class="hero-cta" style="justify-content:center;">
+      <a class="btn-line" href="https://line.me/R/ti/p/%40102shcab" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.69 2 10.23c0 4.07 3.58 7.48 8.4 8.13.33.07.78.22.89.5.1.26.07.66.03.92l-.14.87c-.04.26-.2 1.01.89.55 1.08-.46 5.86-3.45 8-5.9C21.36 13.9 22 12.14 22 10.23 22 5.69 17.52 2 12 2z"/></svg>
+        LINEで友だち追加
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 家計簿アシスタント — スマホで記録、PCで整える家計簿サービス
+  </footer>
+
+</div>
+</body>
+</html>
