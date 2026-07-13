@@ -87,8 +87,72 @@
   header{
     padding: 28px 0 0;
   }
+  .nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: .2s;
+  white-space: nowrap;
+}
+
+.header-btn svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.header-btn.line {
+  background: #06C755;
+  color: #fff;
+}
+
+.header-btn.contact {
+  background: #fff;
+  color: #4d6b88;
+  border: 2px solid #d8e3ec;
+}
+
+.header-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+@media (max-width: 640px) {
+  .header-actions {
+    gap: 8px;
+  }
+
+  .header-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .header-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
   .nav-row{
-    display:flex; align-items:center; justify-content:space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .logo{
     font-family: "Zen Maru Gothic", sans-serif;
